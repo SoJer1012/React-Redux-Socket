@@ -1,0 +1,64 @@
+.error-msg{
+  color: red;
+  text-align: center;
+  font-size: 16px;
+}
+.am-list-item .am-input-label,
+.am-list-item .am-input-control input,
+.am-textarea-label,
+.am-textarea-control textarea,
+.am-list-item .am-list-line .am-list-content{
+  font-size: 14px;
+}
+.am-tab-bar{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: inherit;
+  z-index: 100;
+}
+.sticky-header{  /*使标题始终在顶部*/
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/*消息文本居右*/
+
+#chat-page .am-list-body,
+#chat-page .am-list-item{
+  background-color: transparent;
+  border: 0;
+}
+#chat-page .am-list-body:before,
+#chat-page .am-list-body:after,
+#chat-page .am-list-body div:not(:last-child) .am-list-line::after{
+  height: 0;
+}
+
+#chat-page .am-list-line .am-list-content{
+  border-radius: 10px;
+  background: #fff;
+}
+#chat-page .chat-me .am-list-extra {
+  flex-basis: auto;  /*宽度包裹内容*/
+  margin-left: 15px;
+}
+#chat-page .chat-me .am-list-content {
+  padding-right: 15px;
+  text-align: right;
+}
+#chat-page .chat-other{
+  padding-right: 30%;
+}
+#chat-page .chat-other .am-list-content{
+  padding-left: 15px;
+  text-align: left;
+}
+#chat-page .chat-me{
+  padding-left: 30%;
+}
+#chat-page .chat-me .am-list-line .am-list-content{
+  background: #108ee9;
+  color: #fff;
+}
